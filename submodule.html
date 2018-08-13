@@ -1,149 +1,308 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Starter Kit</title>
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Starter Kit</title>
 
-    <!-- Web Application Manifest -->
-    <link rel="manifest" href="manifest.json">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Web Starter Kit">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#2F3BA2">
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#2F3BA2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <!-- Material Design Lite page styles:
+  <!-- Material Design Lite page styles:
     You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
     Format: material.color1-color2.min.css, some examples:
     material.red-teal.min.css
     material.blue-orange.min.css
     material.purple-indigo.min.css
     -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
 
-    <!-- Material Design icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Material Design icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Your styles -->
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Submodule</h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Bacon</a>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <button action="button">Yeah, I want more bacon!</button>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <img src="http://media.washtimes.com.s3.amazonaws.com/media/image/2015/02/23/bacon.jpg" alt="Bacon" style="width: 100%; height: 100%;">
-          </section>
-        </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
+  <!-- Your styles -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Submodule</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#overview" class="mdl-layout__tab is-active">Bacon</a>
+        <a href="#checkout" class="mdl-layout__tab">CHECKOUT</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="mdl-layout__tab-panel is-active" id="overview">
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <button action="button">Yeah, I want more bacon!</button>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <img src="http://media.washtimes.com.s3.amazonaws.com/media/image/2015/02/23/bacon.jpg" alt="Bacon" style="width: 100%; height: 100%;">
+        </section>
+      </div>
+      <div class="mdl-layout__tab-panel" id="checkout">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--8-col">
+            <form action="#">
+              <div>
+                <span class="checkout title">
+                  <span class="mdl-badge mdl-badge--overlap" data-badge="1"></span>Personal Information</span>
+              </div>
+              <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="fname">
+                <label class="mdl-textfield__label" for="fname">First name</label>
+              </div>
+              <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="lname">
+                <label class="mdl-textfield__label" for="lname">Last name</label>
+              </div>
+
+              <div class="checkout field full mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="email">
+                <label class="mdl-textfield__label" for="email">Email</label>
+              </div>
+
+              <div class="checkout field country mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select type="text" class="mdl-textfield__input" id="country">
+                  <option value="1">United States</option>
+                  <option value="2">Poland</option>
+                  <option value="3">United Kingdom</option>
+                  <option value="4">Germany</option>
+                </select>
+                <span id="country_arrow" class="icon material-icons">arrow_drop_down</span>
+                <label class="mdl-textfield__label" for="country">Country</label>
+              </div>
+              <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="postal">
+                <label class="mdl-textfield__label" for="postal">Postal Code</label>
+              </div>
+
+              <div class="checkout field full last mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="phone">
+                <label class="mdl-textfield__label" for="phone">Phone Number</label>
+              </div>
+
+              <div>
+                <span class="checkout title">
+                  <span class="mdl-badge mdl-badge--overlap" data-badge="2"></span>
+                  Payment Details
+                  <span id="lock_icon" class="icon material-icons">lock</span>
+                </span>
+              </div>
+
+              <div class="checkout field full mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="credit">
+                <img id="visa_badge" src="/images/visa.png" />
+                <label class="mdl-textfield__label" for="credit">Credit Card Number</label>
+              </div>
+              <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="credit_code">
+                <img id="code_info" src="/images/help.png" />
+                <label class="mdl-textfield__label" for="credit_code">Security code</label>
+              </div>
+              <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="exp_date">
+                <label class="mdl-textfield__label" for="exp_date">Expiration date</label>
+              </div>
+
+              <button type="submit" id="complete_button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                <span class="icon material-icons">shopping_cart</span>
+                COMPLETE PURCHASE
+              </button>
+            </form>
+
+            <span class="mdl-tooltip" for="code_info">
+              Usually a 3-digit number
+              <br> on the back of your card
+            </span>
+          </div>
+          <div id="order_total_main" class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col">
+            <div id="order_total">
+              <span id="order_total_title">Your order</span>
+              <table id="total_table" class="mdl-color-text--black">
+                <tbody>
+                  <tr>
+                    <td>Apple Watch Sport</td>
+                    <td class="price">$ 580</td>
+                  </tr>
+                  <tr>
+                    <td>Modern Buckle</td>
+                    <td class="price">$ 380</td>
+                  </tr>
+                  <tr class="border">
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr style="height: 5px;"></tr>
+                  <tr>
+                    <td>Total purchases</td>
+                    <td class="price">$ 960.00</td>
+                  </tr>
+                  <tr>
+                    <td>Estimated tax</td>
+                    <td class="price">$ 0</td>
+                  </tr>
+                  <tr class="border">
+                    <td colspan="2"></td>
+                  </tr>
+                  <tr style="height: 5px;"></tr>
+                  <tr>
+                    <td class="mdl-typography--font-bold">Total</td>
+                    <td class="price total">$ 960</td>
+                  </tr>
+                  <tr style="height: 20px; "></tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
+        </div>
+      </div>
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer--middle-section">
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">Features</h1>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Terms</a>
+              </li>
+              <li>
+                <a href="#">Partners</a>
+              </li>
+              <li>
+                <a href="#">Updates</a>
+              </li>
             </ul>
           </div>
-        </footer>
-      </main>
-    </div>
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">Details</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <li>
+                <a href="#">Spec</a>
+              </li>
+              <li>
+                <a href="#">Tools</a>
+              </li>
+              <li>
+                <a href="#">Resources</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">Technology</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <li>
+                <a href="#">How it works</a>
+              </li>
+              <li>
+                <a href="#">Patterns</a>
+              </li>
+              <li>
+                <a href="#">Usage</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Contracts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-mega-footer--drop-down-section">
+            <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer--heading">FAQ</h1>
+            <ul class="mdl-mega-footer--link-list">
+              <li>
+                <a href="#">Questions</a>
+              </li>
+              <li>
+                <a href="#">Answers</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mdl-mega-footer--bottom-section">
+          <div class="mdl-logo">
+            More Information
+          </div>
+          <ul class="mdl-mega-footer--link-list">
+            <li>
+              <a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Privacy and Terms</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
 
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-    <!-- build:js(app/) ../../scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <!-- build:js(app/) ../../scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- Built with love using Web Starter Kit -->
-  </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Built with love using Web Starter Kit -->
+</body>
+
 </html>
