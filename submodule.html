@@ -87,16 +87,16 @@
                   <span class="mdl-badge mdl-badge--overlap" data-badge="1"></span>Personal Information</span>
               </div>
               <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="fname">
+                <input class="mdl-textfield__input" type="text" id="fname" required>
                 <label class="mdl-textfield__label" for="fname">First name</label>
               </div>
               <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="lname">
+                <input class="mdl-textfield__input" type="text" id="lname" required>
                 <label class="mdl-textfield__label" for="lname">Last name</label>
               </div>
 
               <div class="checkout field full mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="email">
+                <input class="mdl-textfield__input" type="text" id="email" required>
                 <label class="mdl-textfield__label" for="email">Email</label>
               </div>
 
@@ -111,12 +111,12 @@
                 <label class="mdl-textfield__label" for="country">Country</label>
               </div>
               <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="postal">
+                <input class="mdl-textfield__input" type="text" id="postal" maxlength="6" required>
                 <label class="mdl-textfield__label" for="postal">Postal Code</label>
               </div>
 
               <div class="checkout field full last mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="phone">
+                <input class="mdl-textfield__input" type="text" id="phone" required>
                 <label class="mdl-textfield__label" for="phone">Phone Number</label>
               </div>
 
@@ -129,19 +129,22 @@
               </div>
 
               <div class="checkout field full mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="credit">
+                <input class="mdl-textfield__input" type="text" id="credit" maxlength="19" required>
                 <img id="visa_badge" src="/images/visa.png" />
                 <label class="mdl-textfield__label" for="credit">Credit Card Number</label>
               </div>
               <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="password" id="credit_code">
+                <input class="mdl-textfield__input" type="password" id="credit_code" maxlength="3" required>
                 <img id="code_info" src="/images/help.png" />
                 <label class="mdl-textfield__label" for="credit_code">Security code</label>
               </div>
               <div class="checkout field mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <input class="mdl-textfield__input" type="text" id="exp_date">
+                <input class="mdl-textfield__input" type="text" id="exp_date" maxlength="5" required>
                 <label class="mdl-textfield__label" for="exp_date">Expiration date</label>
               </div>
+
+              <div id="error_message"></div>
+              <div id="success_message">All details are correct!</div>
 
               <button type="submit" id="complete_button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 <span class="icon material-icons">shopping_cart</span>
